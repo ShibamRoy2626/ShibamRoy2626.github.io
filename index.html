@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Olympics Data Analysis Project</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" integrity="sha256-NwYEO7rEzgPzvbHSCDTCeIal75PcFJWZiMhr61YXSNs=" crossorigin="anonymous"></script>
+
+<!-- Font Google -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/logo-white.png" alt="logo" class="logo-1" style="max-width: 100px;max-height:50px;"> </a>
+   
+    
+      <ul class="navbar-nav ml-auto hidden md:flex space-x-4">
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="0">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Team</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Approach</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Insights</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Data</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Acknowledgements</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+      </ul>
+
+
+      <div class="md:hidden flex items-center">
+    <!-- Hamburger menu icon -->
+    <button id="toggleMenu" class="block text-gray-800 hover:text-gray-600 focus:outline-none">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+    
+  </div>
+</nav>
+<!-- End Navbar --> 
+
+<!-- Banner Image -->
+
+<div class="banner text-center" data-scroll-index='0'>
+  <div class="banner-overlay">
+    <div class="container">
+      <h1 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Welcome to our Olympics Data Analysis Project</h1>
+      <p>In this project webpage, we have included all data and resources for our project. We have also added our valuable insights and interactions with the data.</p>
+      <a href="https://github.com/ShibamRoy9826/GeeksForGeeks-Hackathon-DataAnalysis-OlympicsData" class="banner-btn">Let's Check!</a> </div>
+  </div>
+</div>
+
+<!-- End Banner Image --> 
+
+<!-- About -->
+
+<div class="about-us section-padding" data-scroll-index='1'>
+  <div class="container">
+    <div class="row">
+      
+      <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever we have done in this project, we did it together!, A strong team makes a successful project afterall!</p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="team/Shibam.jpg">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Shibam Roy</h2>
+            <h3 class="text-gray-500 mb-3">Captain/Data Analyst</h3>
+            <p class="mb-4">Hi, i am Shibam Roy, a 15 year old school student with knowledge of C++, Python , Data Science and some basic DSA</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="team/Ankush.png">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Ankush Roy</h2>
+            <h3 class="text-gray-500 mb-3">Presentator</h3>
+            <p class="mb-4"> Hello, I am Ankush Roy, a 15 year old student with vast knowledge of Mathematics and C++.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="team/Swadhin.png">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Swadhin Maharana</h2>
+            <h3 class="text-gray-500 mb-3">Data Extractor</h3>
+            <p class="mb-4">Hello, I'm Swadhin Maharana, a passionate programmer, quick learner, and aspiring entrepreneur. Highly skilled in problem-solving and ready to create innovative solutions.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="team/Debdutta.jpg">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-gray-900">Debdutta Burman</h2>
+            <h3 class="text-gray-500 mb-3">Front-End Developer</h3>
+            <p class="mb-4">Frontend developer, a quick learner, with a passion for problem-solving, a keen interest in ML, and a data science enthusiast.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- End About --> 
+
+<!-- Start Approach -->
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR APPROACH TO THE GIVEN PROBLEM</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We had a simple approach to the problem to think about it properly.We followed up a number of steps and phases to complete the project properly.</p>
+    </div>
+
+
+<div class ="approach" data-scroll-index='2'>
+ <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex relative pt-5 pb-10 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+</svg>
+
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 1 | Proper Planning</h2>
+          <p class="leading-relaxed">We started by properly planning on how to work on the data. This phase also included the creation of our team and setting roles of each team members.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+</svg>
+
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 2 | Exploring the data</h2>
+          <p class="leading-relaxed">We explored the data to check out its columns, its length , and other basic features of the dataset. In this phase we also tried to find out how many null values our dataset has, or even it has null values or not. We also tried to find out occuraces of types of data in a column for example the medal_type consists of Bronze,Silver and Gold.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+</svg>
+
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 3 | Data cleaning</h2>
+          <p class="leading-relaxed">We started by cleaning all the null data points in the dataset, the most of the null values were found in the participant_title column. We managed to fill all possible points via the athletes_url column as it contained all the name of the athletes.We fetched the remaining values with country_name, or if not possible we dropped them.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+</svg>
+
+
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 4 | Analyzing the data</h2>
+          <p class="leading-relaxed">In this phase we tried to analyze the data by various means , through correlation mattrices, or via other visualizations. Besides visualization techniques we have used different queries in the data, which helped s find out various insights. We found out very helpful insights such as the dominance of USA or the strong correlation of Continent/ country position with their medals.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">5</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+</svg>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 5 | Visualizations</h2>
+          <p class="leading-relaxed">In this phase after analysis, we made powerful visualizations which depict the given dataset clearly. We have plotted few graphs which show some insights on the data.</p>
+        </div>
+      </div>
+    </div>
+
+<div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">6</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+</svg>
+
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 6 | Training and Testing a machine learning Model</h2>
+          <p class="leading-relaxed">After all our work , with our findings, we trained a machine learning model. We used Random Forest Regressor as the algorithm in this case.Our trained model isn't very accurate, but it can give a basic idea that on what factors a country's success in olympics is based on.However due to some finance issues we couldn't bring this model to run in this website(its a static website).</p>
+        </div>
+      </div>
+    </div>
+<div class="flex relative pb-0 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-orange-500 text-white relative z-10 title-font font-medium text-sm">7</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-orange-100 text-orange-500 rounded-full inline-flex items-center justify-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">STEP 7 | Finished</h2>
+          <p class="leading-relaxed">After all this hardwork, we gained an extreme level of experience and we also worked together forming a great team, thanks to GeeksForGeeks we were able to make this great project!.</p>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<!-- End Approach --> 
+
+
+<!-- Insights -->
+<div data-scroll-index="3">
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR DISCOVERIES AND FINDINGS</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We were able to find out various things in the data which can help us identify the rate of success of a country.Here are the insights that we found out from the given dataset and also from some external data.</p>
+
+</div>
+</div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-5 ">
+    <div class="flex flex-col text-lg w-full mb-20">
+<h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Our Insights :- </h2>
+<ol class=" space-y-1 text-gray-700 list-decimal list-inside dark:text-gray-400">
+    <li>
+        <span class="font-semibold text-gray-900 dark:text-white">1. USA or United States of America</span> was the most dominant country in the olympic events. It won about 2616 medals in total, out of which  <span class="font-semibold text-gray-900 dark:text-white">766 were Bronze medals, 978 Gold medals, and 872 Silver medals</span> .
+    </li>
+    <br>
+    <li>
+        <span class="font-semibold text-gray-900 dark:text-white">2.</span> Overall in the past <span class="font-semibold text-gray-900 dark:text-white">120 years</span> <span class="font-semibold text-gray-900 dark:text-white">European countries or countries belonging to Europe</span> had most of the success rate.This can be due to their immense development in the past years.
+    </li>
+    <br>
+    <li>
+        <span class="font-semibold text-gray-900 dark:text-white">3. African coutries or countries belonging to Africa </span> were comparitively more prone to a lose instead of a win. It can be due to multiple <span class="font-semibold text-gray-900 dark:text-white">Historical reasons</span>, as they were under the colonial rule or other factors can be the cause of it. 
+    </li>
+    <br>
+    <li>
+      <span class="font-semibold text-gray-900 dark:text-white">3. </span> We also found out the correlation between population of a country and its number of medals.This also makes sense for a country to have higher olympic medals , if it has higher population, because a higher population can result in a <span class="font-semibold text-gray-900 dark:text-white">Higher number of athletes</span>. This finally results in more number of medals.      
+    </li>
+    <br>
+    <li>
+      <span class="font-semibold text-gray-900 dark:text-white">4. </span> Although, we didn't have any data about GDPs of countries, it can also be estimated that  <span class="font-semibold text-gray-900 dark:text-white">GDP of a country is related to its success</span> in olympics. This is possible because its observed that more developed countries or simply countries with more GDP are receiving more medals,<span class="font-semibold text-gray-900 dark:text-white"> for example USA , Germany ,Norway, UK are all developed nations</span>
+    </li>
+    <br>
+    <li>
+      <span class="font-semibold text-gray-900 dark:text-white">5. </span> Even Though this is quite obvious, but we have found out that <span class="font-semibold text-gray-900 dark:text-white">coutnries which already have one type of medal , has high probability of receiving other type of medal</span> in olympics. This can be explained like, if a country has high amount of gold medals, its highly likely for that country to also have multiple Silver and bronze medals.
+    </li>
+    <br>
+    <li>
+      <span class="font-semibold text-gray-900 dark:text-white">6. </span> On an average each player was aged about <span class="font-semibold text-gray-900 dark:text-white">16</span>. The given dataset contains data from <span class="font-semibold text-gray-900 dark:text-white">1896-2022 (120 years)</span>
+    </li>
+    <br>
+    <li>
+      <span class="font-semibold text-gray-900 dark:text-white">7.</span> <span class="font-semibold text-gray-900 dark:text-white">Bronze medals</span> were most common, and <span class="font-semibold text-gray-900 dark:text-white">Silver medals</span> were most rare
+    </li>
+    <br>
+    
+
+</ol>
+</div></div>
+</section>
+</div>
+<!-- End  Insights-->
+
+<!-- Data -->
+<div data-scroll-index="4">
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">DATA SOURCES</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">For this project we have used the given dataset from GeeksForGeeks, and for even further exploration we have scaped data from the internet.We also used data from kaggle for the world population.</p>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-5 ">
+    <div class="flex flex-col text-lg w-full mb-20">
+<h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Data sources we have used :- </h2>
+<ol class=" space-y-1 text-gray-700 list-decimal list-inside dark:text-gray-400">
+    <li>
+        1. Provided dataset by GeeksForGeeks <a href="https://github.com/AshishJangra27/GFG-Hackathon" style="color:orange">Click here to check</a>
+    </li>
+    <br>
+    <li>
+      2. Scraped data from internet using Google Cloud Platform.The data was related to the birth years and age of the athletes. (This task was mostly done by Swadhin Maharana)<a href="https://github.com/ShibamRoy9826/GeeksForGeeks-Hackathon-DataAnalysis-OlympicsData/blob/main/finalname_year_age.csv" style="color:orange">Click here to check</a>
+    </li>
+    <br>
+    <li>
+      3. For further exploration, we took a dataset from kaggle about country population to check correlation of it with the success of it.<a href="https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset" style="color:orange">Click here to check</a> 
+    </li>
+<br>
+    <li>
+      4. To check out our Project you can go <a href="https://github.com/ShibamRoy9826/GeeksForGeeks-Hackathon-DataAnalysis-OlympicsData/tree/main" style="color:orange">Here</a>
+    </li>
+
+</ol>
+</div>
+</div>
+</section>
+<!-- Start Graph( in data) -->
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Visualizations</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To understand and represent our data visually, we made multiple attractive graphs. Here are these graphs( and also one correlation mattrix ):</p>
+    </div>
+
+    <div class="flex flex-wrap -m-4" href="Res/graph1.png">
+      <div class="lg:w-3/3 h-full w-full sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="Res/graph1.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 transition duration-700">
+            <a  href="Res/graph3.png"><h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Bar Graph</h2></a>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top 10 countries</h1>
+            <p class="leading-relaxed">Contains the top 10 countries on the basis of most olympic medals they received.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-3/3 h-full w-full  sm:w-1/2 p-4" href="Res/graph2.png">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full  object-cover object-center" src="Res/graph2.png">
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 transition duration-700">
+            <a  href="Res/graph3.png"><h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Pie Chart</h2></a>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top 10 Sports</h1>
+            <p class="leading-relaxed">Contains the top 10 sports played in the olympic events.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-3/3 h-full w-full sm:w-1/2 p-4">
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="Res/graph3.png"  >
+          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-80 transition duration-700">
+            <a href="Res/graph3.png"><h2 class="tracking-widest text-sm title-font font-medium text-orange-500 mb-1">Correlation Matrix</h2></a>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Feature correlations</h1>
+            <p class="leading-relaxed">This contains the correlation between multiple features of our data.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- End Graph( in data) -->
+</div>
+</div>
+</div>
+</section>
+
+<!-- End data-->
+
+
+
+<!-- Acknowledgements -->
+
+<div data-scroll-index="5">
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">Acknowledgements</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        
+We, the team of passionate data enthusiasts, are humbled and immensely grateful for the incredible opportunity to participate in the Hackathon on Data Analysis organized by GeeksForGeeks. This exhilarating event has been an unforgettable journey that allowed us to explore the world of data analysis and showcase our skills as a team.
+<br>
+First and foremost, we extend our heartfelt gratitude to GeeksForGeeks for organizing such a fantastic hackathon. The platform provided us with an exceptional arena to apply our data analysis expertise, learn from industry experts, and challenge ourselves to new heights.
+<br>
+We cannot thank the organizers, mentors, and volunteers enough for their hard work and dedication in making this hackathon a resounding success. Their support and guidance throughout the event have been invaluable, pushing us to go above and beyond in our pursuit of data-driven solutions.
+<br>
+A special thank you goes to the dataset providers for giving us access to the rich and vast Olympics data. This dataset fueled our curiosity and allowed us to dive deep into our analysis, uncovering meaningful insights and trends.
+<br>
+Our heartfelt appreciation also goes to each member of our team. It has been an incredible journey collaborating with such talented and like-minded individuals. Together, we navigated through complex data challenges, brainstormed innovative ideas, and leveraged each other's strengths to achieve our goals.
+<br>
+Participating in this hackathon has been a transformative experience for our team, fostering camaraderie, knowledge-sharing, and growth. We are truly grateful for the memories created and the skills honed during this remarkable event.
+<br>
+Once again, our sincere thanks to GeeksForGeeks for organizing this extraordinary hackathon, and to everyone involved for creating an unforgettable experience in the realm of data analysis and exploration.
+<br>
+<span class="font-semibold text-gray-900 dark:text-white">With heartfelt appreciation,<br>
+Shibam Roy, Ankush Roy, Swadhin Maharana, Debdutta Burman<br>
+GeeksForGeeks Hackathon Participants
+</span>
+      </p>
+
+</div>
+</div>
+</div></div>
+</section>
+
+<!-- Acknowledgements End--> 
+
+<!-- Contact -->
+
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto" data-scroll-index="6">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" >Contact Us</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You can contact us via the following details.</p>
+    </div>
+    
+<div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/Shibam.jpg">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Shibam Roy</h2>
+            <p class="text-gray-500">Email<br>royshibam9826@gmail.com<br>Phone no.-<br> 8787777952</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/Ankush.png">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Ankush Roy</h2>
+            <p class="text-gray-500">Email- ankush3411111@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/Swadhin.png">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Swadhin Maharana</h2>
+            <p class="text-gray-500">Email- noreplycursorhigh@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="team/Debdutta.jpg">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Debdutta Burman</h2>
+            <p class="text-gray-500">Email- debdutta0401@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<!-- End Contact -->
+
+
+
+<!-- Start footer -->
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <svg width="50px" height="50px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs><style>.a{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="a" cx="10.3158" cy="20.8323" r="5.8158"/><circle class="a" cx="24" cy="20.8323" r="5.8158"/><circle class="a" cx="37.6842" cy="20.8323" r="5.8158"/><circle class="a" cx="17.1579" cy="27.1677" r="5.8158"/><circle class="a" cx="30.8421" cy="27.1677" r="5.8158"/></svg>
+      <span class="ml-3 text-xl">Olympics Data Analysis</span>
+    </a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500" href="https://github.com/ShibamRoy9826/GeeksForGeeks-Hackathon-DataAnalysis-OlympicsData">
+        <!-- Github -->
+        <svg width="25px" height="25px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+        
+      </a>
+      <!-- Github end -->
+      
+      <a class="ml-3 text-gray-500" href="#">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16L12 8M12 8L15 11M12 8L9 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+<!-- End footer -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<!-- owl carousel js --> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- magnific-popup --> 
+<script src="js/jquery.fancybox.min.js"></script> 
+
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+
+<!-- isotope.pkgd.min js --> 
+<script src="js/isotope.pkgd.min.js"></script> 
+<script>
+  $(window).on("scroll",function () {
+
+      var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+      if(bodyScroll > 130){
+
+          navbar.addClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-white.png');
+
+
+      }else{
+
+          navbar.removeClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-white.png');
+
+      }
+
+  });
+
+  $(window).on("load",function (){
+
+
+
+var bodyScroll = $(window).scrollTop(),
+navbar = $(".navbar");
+
+if(bodyScroll > 130){
+
+navbar.addClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+}else{
+
+navbar.removeClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-white.png');
+
+}
+
+/* smooth scroll
+  -------------------------------------------------------*/
+  $.scrollIt({
+
+easing: 'swing',      // the easing function for animation
+scrollTime: 900,       // how long (in ms) the animation takes
+activeClass: 'active', // class given to the active nav element
+onPageChange: null,    // function(pageIndex) that is called when page is changed
+topOffset: -63
+});
+
+/* isotope
+-------------------------------------------------------*/
+var $gallery = $('.gallery').isotope({});
+$('.gallery').isotope({
+
+    // options
+    itemSelector: '.item-img',
+    transitionDuration: '0.5s',
+
+});
+
+
+$(".gallery .single-image").fancybox({
+  'transitionIn'  : 'elastic',
+  'transitionOut' : 'elastic',
+  'speedIn'   : 600,
+  'speedOut'    : 200,
+  'overlayShow' : false
+});
+
+
+/* filter items on button click
+-------------------------------------------------------*/
+$('.filtering').on( 'click', 'button', function() {
+
+    var filterValue = $(this).attr('data-filter');
+
+    $gallery.isotope({ filter: filterValue });
+
+    });
+
+$('.filtering').on( 'click', 'button', function() {
+
+    $(this).addClass('active').siblings().removeClass('active');
+
+});
+
+})
+
+$(function () {
+$( ".cover-bg" ).each(function() {
+    var attr = $(this).attr('data-image-src');
+
+    if (typeof attr !== typeof undefined && attr !== false) {
+      $(this).css('background-image', 'url('+attr+')');
+    }
+
+  });
+
+  /* sections background color from data background
+  -------------------------------------------------------*/
+  $("[data-background-color]").each(function() {
+      $(this).css("background-color", $(this).attr("data-background-color")  );
+  });
+
+
+/* Owl Caroursel testimonial
+  -------------------------------------------------------*/
+  
+  $('.testimonials .owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    items:1,
+    margin:30,
+    dots: true,
+    nav: false,
+    
+  });
+
+});
+
+</script>
+</body>
+</html>
